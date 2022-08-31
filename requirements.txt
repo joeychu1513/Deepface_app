@@ -1,0 +1,6 @@
+DeepFace
+Flask
+Flask-Session
+requests
+datetime
+werkzeug.utils

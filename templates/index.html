@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Recognize The President
+{% endblock %}
+
+{% block body %}
+
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/static/icon/identify-big.png" alt="" width="128" height="128">
+    <h1 class="display-5 fw-bold">Identify The President</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Upload a photo to check if it contains the last 10 President of the United States</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" class="form-control" name="file" accept="image/*">
+            <input type="submit" class="form-control">
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
